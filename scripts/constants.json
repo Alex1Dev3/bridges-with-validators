@@ -1,0 +1,21 @@
+{
+    "NET1_URL": "",
+    "NET2_URL": "",
+    "TOKEN1_ADDRESS": "",
+    "TOKEN2_ADDRESS": "",
+    "BRIDGE1_ADDRESS": "",
+    "BRIDGE2_ADDRESS": "",
+    "ABI_BRIDGE": [
+        "event Init(address sender, uint256 tokenId, uint256 nonce)",
+        "function setValidator(address _addr, bool _status)",
+        "function initSwap(uint256 _tokenId)",
+        "function getHash(address _validator, address _sender, uint256 _tokenId, uint256 _nonce) pure returns (bytes32)",
+        "function redeemSwap(address _sender, address _receiver, uint256 _tokenId, uint256 _nonce, bytes calldata _signature)"
+    ],
+    "ABI_TOKEN": [
+        "function balanceOf(address owner) view returns (uint256 balance)",
+        "function ownerOf(uint256 tokenId) view returns (address)",
+        "function approve(address to, uint256 tokenId)",
+        "function mint(address _sender, uint256 _tokenId)"
+    ]
+}
